@@ -141,6 +141,18 @@ def login():
             return redirect('/admin')
     return render_template('login_page.html', error=error)
 
+@app.route('/search', methods=['GET', 'POST'])
+def searching():
+    if request.method == 'POST':
+        squery = request.form['ing']
+        sanswer = Todo.query.filter_by(name=squery).first()
+        
+        return render_template('result.html', sanswer=sanswer)
+    else:
+        return render_template('search.html')
+
+
+
 
 
 
