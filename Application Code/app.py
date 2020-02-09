@@ -62,6 +62,51 @@ def index():
        return render_template('Current.html', names=names, descs=descs, dates=dates, peter=peter) # ,events=events, rows=rows)
 
 
+
+@app.route('/past', methods=['POST', 'GET'])
+def past():
+    
+       events = Todo.query.all()
+        #rows = Todo.query.count()
+       names = []
+       descs = []
+       dates = []
+       for event in events:
+           names.append(event.name)
+           descs.append(event.desc)
+           dates.append(event.date)
+
+    
+       return render_template('Past.html', names=names, descs=descs, dates=dates) # ,events=events, rows=rows)
+
+
+
+
+
+
+
+@app.route('/upcoming', methods=['POST', 'GET'])
+def upcoming():
+    
+       events = Todo.query.all()
+        #rows = Todo.query.count()
+       names = []
+       descs = []
+       dates = []
+       for event in events:
+           names.append(event.name)
+           descs.append(event.desc)
+           dates.append(event.date)
+
+    
+       return render_template('Upcoming.html', names=names, descs=descs, dates=dates) # ,events=events, rows=rows)
+
+
+
+
+
+
+
 @app.route('/delete/<int:id>')
 def delete(id):
     event_to_delete = Todo.query.get_or_404(id)
@@ -92,6 +137,22 @@ def update(id):
 
     else:
         return render_template('update.html', event=event)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
