@@ -22,6 +22,8 @@ On this Web App,
 * Persistent data storage.
 * Responsive to both Desktop and Mobile screens.
 ### Screenshots:
+![Upcoming Events](Screenshot from 2020-02-10 04-58-03.png)       
+![Admin Page](Screenshot from 2020-02-10 04-58-19.png)
 
 
 #### Architecture Diagram
