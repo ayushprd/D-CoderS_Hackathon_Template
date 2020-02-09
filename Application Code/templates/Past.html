@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -182,9 +183,14 @@ body{
                 '<div class="card-body">'+
                     '<h4 class="card-title">'+desc+'</h4>'+
                     '<p class="card-text">Sample text.</p>'+
-                    '<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Read More</button>'+
-                '</div>'
-        
+                    '<div title="Add to Calendar" class="addeventatc">Add To Calendar'
+        //removed two divs
+                var d=date1.getDay();
+                var m=date1.getMonth();
+                var y=date1.getFullYear();
+                var daa=m+'/'+d+'/'+y
+                var dataa='<span class="start">'+daa+'</span><span class="end">'+daa+'</span></span><span class="timezone">America/Los_Angeles</span><span class="title">Summary of the event</span><span class="description">Description of the event</span></div></div>';
+                card=card+dataa;
         if(val<0){ 
             var v=Math.floor(Math.abs(val/24));
             if(v>30){
@@ -193,7 +199,7 @@ body{
             }else{
                 card=card+'<div class="card-footer text-muted ">'+v+' day(s) to go</div></div>'
             }
-            card=card+modal;
+            card;
             future.push(card)
         }else if(val<24 && val>0){
             present.push(card);
@@ -206,10 +212,10 @@ body{
     }
     var klass='<div class="card mx-auto">';
     var len=past.length
-    if(len>0&& len<=3){
+    if(len==1){
         place.className="mx-auto my-auto";
         place.innerHTML=past.join(',');
-    }else if(len>3){
+    }else if(len>1){
         place.className="mr-auto d-md-inline-flex ";
         place.innerHTML=past.join(',');
     }else{
