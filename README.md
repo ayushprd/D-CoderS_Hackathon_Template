@@ -17,18 +17,19 @@ On this Web App,
 * Addition, updation and deletion of events.
 * Classification of events into: past, current and upcoming.
 * Countdown Timer
-* **[Bonus ]:** Add to personal calendar for receiving remminder about an event
+* **[Bonus ]:** Add to personal calendar for receiving remminder about an particular event.
 * **[Bonus ]:** Search for a particular event using the search bar.
 * Persistent data storage.
 * Responsive to both Desktop and Mobile screens.
 ### Screenshots:
-![Upcoming Events](Screenshot from 2020-02-10 04-58-03.png)       
-![Admin Page](Screenshot from 2020-02-10 04-58-19.png)
+![Upcoming Events](https://github.com/ayushprd/D-CoderS_Hackathon_Template/blob/master/Screenshot%20from%202020-02-10%2004-58-03.png)       
+![Admin Page](https://github.com/ayushprd/D-CoderS_Hackathon_Template/blob/master/Screenshot%20from%202020-02-10%2004-58-19.png)
+![Search Bar](https://github.com/ayushprd/D-CoderS_Hackathon_Template/blob/master/Screenshot%20from%202020-02-10%2004-58-37.png)
+![Search Result](https://github.com/ayushprd/D-CoderS_Hackathon_Template/blob/master/Screenshot%20from%202020-02-10%2005-22-51.png)
 
 
 #### Architecture Diagram
-
-Affix an image of the flow diagram/architecture diagram of the solution
+![Work Flow Diagram](https://github.com/ayushprd/D-CoderS_Hackathon_Template/blob/master/Untitled%20Diagram.png)
 
 #### Technical Description
 ----------------------------------
