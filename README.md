@@ -11,7 +11,7 @@ To solve this problem, we have built a Web App on which everyone can easily find
 ----------------------------------
 On this Web App, 
 * The **event organizers** or the **admins** can create new events, update and delete events.
-* **Students** can see events segreagated into three categories: past, currrent and future events. To be reminded for an pqrticular event they can save an upcoming event to their personal calendar using our **Add to Calendar** method. They can also search for a particular event using the search feature.
+* **Students** can see events categorized into three categories: past, current and future events. To be reminded for an pqrticular event they can save an upcoming event to their personal calendar using our **Add to Calendar** method. They can also search for a particular event using the search feature.
 
 ### Features :
 * Addition, updation and deletion of events.
